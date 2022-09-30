@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Up</title>
+</head>
+<body>
+    <h1> Maybelline </h1>
+</body>
+<script type ="text/javascript">
+
+    async function GetData(){
+
+        const response = await fetch ("https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline")
+        const data = await response.json();
+        const {make_up} = data;
+
+        document.getElementById('num').textContent = age;
+    }
+
+</script>
+</html>
